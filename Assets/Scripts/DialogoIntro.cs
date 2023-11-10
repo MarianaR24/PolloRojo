@@ -13,6 +13,8 @@ public class DialogoIntro : MonoBehaviour
     private string currentText = "";
     [SerializeField] private bool escribiendo = false;
     public GameObject Cosito;
+    public GameObject npc;
+    public GameObject prota;
 
 
     void Start()
@@ -23,24 +25,28 @@ public class DialogoIntro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !escribiendo)
-        {
-            if (lineIndex <= lineas.Length)
+        if (Input.GetMouseButtonDown(0))
             {
-                StartCoroutine(AnimateText());
-                lineIndex++;
-                escribiendo = false;
-            }
-
-            if (lineIndex % 2 == 0)
-            {
-                // acá es par
-            }
-            else 
-            {
-                // acá es impar
-            }
-        }
+                if (lineIndex <= lineas.Length)
+                {
+                    StartCoroutine(AnimateText());
+                    lineIndex++;
+                    escribiendo = false;
+                }
+            
+                if (lineIndex % 2 == 0)
+                {
+                    Debug.Log("par");
+                    npc.SetActive(true);
+                    prota.SetActive(false);
+                }
+                else 
+                {
+                    Debug.Log("impar");
+                    npc.SetActive(false);
+                    prota.SetActive(true);
+                }      
+            } 
 
         if (lineIndex == 6)
         {
@@ -52,19 +58,15 @@ public class DialogoIntro : MonoBehaviour
     public bool isPlayerInRange;
    
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D other)
     {
-
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-
             isPlayerInRange = true;
             Cosito.SetActive(true);
-           
+            
+            
         }
-
-        
-         
     }
 
     private IEnumerator AnimateText()
