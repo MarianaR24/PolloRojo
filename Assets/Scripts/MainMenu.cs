@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Escena_1");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void QuitGame()
@@ -26,6 +26,6 @@ public class MainMenu : MonoBehaviour
 
     public void Intro()
     {
-        SceneManager.LoadScene("Intro");
+        SceneManager.LoadScene("Inicio");
     }
 }
