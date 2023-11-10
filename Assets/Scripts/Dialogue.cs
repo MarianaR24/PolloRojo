@@ -1,9 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
+    
+
     public bool isPlayerInRange;
     void Update()
     {
@@ -19,7 +20,7 @@ public class Dialogue : MonoBehaviour
             isPlayerInRange = true;
             Debug.Log("se puede iniciar un diálogo");
         }
-
+         
     }
 
     private void OnTriggerExit2D(Collider2D collision)
