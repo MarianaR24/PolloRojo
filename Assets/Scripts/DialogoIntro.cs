@@ -12,6 +12,7 @@ public class DialogoIntro : MonoBehaviour
     private int lineIndex = 0;
     private string currentText = "";
     [SerializeField] private bool escribiendo = false;
+    public GameObject Cosito;
 
 
     void Start()
@@ -37,6 +38,21 @@ public class DialogoIntro : MonoBehaviour
             StartCoroutine(CambiodeEscena());
         }
 
+    }
+
+    public bool isPlayerInRange;
+   
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            isPlayerInRange = true;
+            Cosito.SetActive(true);
+        }
+         
     }
 
     private IEnumerator AnimateText()
