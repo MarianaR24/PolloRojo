@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-    
+    [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
 
     public bool isPlayerInRange;
     void Update()
