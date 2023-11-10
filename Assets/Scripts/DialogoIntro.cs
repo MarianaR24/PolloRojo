@@ -31,6 +31,15 @@ public class DialogoIntro : MonoBehaviour
                 lineIndex++;
                 escribiendo = false;
             }
+
+            if (lineIndex % 2 == 0)
+            {
+                // acá es par
+            }
+            else 
+            {
+                // acá es impar
+            }
         }
 
         if (lineIndex == 6)
@@ -51,7 +60,10 @@ public class DialogoIntro : MonoBehaviour
 
             isPlayerInRange = true;
             Cosito.SetActive(true);
+           
         }
+
+        
          
     }
 
@@ -80,6 +92,6 @@ public class DialogoIntro : MonoBehaviour
     private IEnumerator CambiodeEscena()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Casa");
+        Cosito.SetActive(false);
     }
 }
