@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-    private bool isPlayerInRange;
+    public bool isPlayerInRange;
     void Update()
     {
         
@@ -17,6 +17,7 @@ public class Dialogue : MonoBehaviour
         {
 
             isPlayerInRange = true;
+            Debug.Log("se puede iniciar un diálogo");
         }
 
     }
@@ -28,6 +29,8 @@ public class Dialogue : MonoBehaviour
         {
 
             isPlayerInRange = false;
+            Debug.Log("No se puede iniciar un diálogo");
+
         }
     }
 }
