@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - JJ
+  - Burdel
+  - Adonay
+  - Rubio
+  - Rodolfo
+  - Burdel2
   layers:
   - Default
   - TransparentFX
