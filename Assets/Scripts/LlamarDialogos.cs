@@ -8,6 +8,9 @@ public class LlamarDialogos : MonoBehaviour
 {
     public Flowchart dialogo;
     public string rodolfo = "Rodolfo";
+    public string diego = "Diego";
+    public string diego2 = "Diego2";
+    public string toño = "Toño";
     public string mensaje = "JJ";
     public string mensaje2 = "Burdel";
     public string mensaje3 = "Adonay";
@@ -32,6 +35,21 @@ public class LlamarDialogos : MonoBehaviour
         if(other.gameObject.CompareTag("Rodolfo"))
         {
             dialogo.SendFungusMessage(rodolfo);
+        }
+
+        if(other.gameObject.CompareTag("Diego"))
+        {
+            dialogo.SendFungusMessage(diego);
+        }
+
+        if(other.gameObject.CompareTag("Diego2"))
+        {
+            dialogo.SendFungusMessage(diego2);
+        }
+
+        if(other.gameObject.CompareTag("Toño"))
+        {
+            dialogo.SendFungusMessage(toño);
         }
 
         if(other.gameObject.CompareTag("Rubio"))

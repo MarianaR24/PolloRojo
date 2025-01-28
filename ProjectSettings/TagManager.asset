@@ -10,6 +10,10 @@ TagManager:
   - Rubio
   - Rodolfo
   - Burdel2
+  - Diego
+  - Diego2
+  - "To\xF1o"
+  - Salida
   layers:
   - Default
   - TransparentFX
