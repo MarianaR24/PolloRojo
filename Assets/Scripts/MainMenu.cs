@@ -5,14 +5,22 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("Inicio");
+    }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        /*if (Input.GetMouseButtonDown(0))
             {
                 FindObjectOfType<AudioManager>().Play("Boton");
-            }
+            }*/
     }
 
+    public void SonidoBoton()
+    {
+        FindObjectOfType<AudioManager>().Play("Boton");
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("Warning");
@@ -24,8 +32,13 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Sale del juego");
     }
 
-    public void Intro()
+    public void Pausa()
     {
-        SceneManager.LoadScene("Inicio");
+        Time.timeScale = 0f;
+    }
+
+    public void Reanudar()
+    {
+        Time.timeScale = 1f;
     }
 }

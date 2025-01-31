@@ -6,16 +6,31 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Inicio.unity
-    guid: 85cfe66a18faea348a6b476ca1f7f8bf
-  - enabled: 1
     path: Assets/Scenes/Warning.unity
     guid: ea92cde0aef63094ea98939c73542cad
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Escena1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Interior oficina.unity
     guid: e797c492c4db95444bf8b4c91ce982c4
+  - enabled: 1
+    path: Assets/Scenes/Escena2.unity
+    guid: 56b5be0df7242ae4fb214a913df93544
+  - enabled: 1
+    path: Assets/Scenes/Interior burdel.unity
+    guid: a83fa319eacb61b448cd683bfc67c44a
+  - enabled: 1
+    path: Assets/Scenes/Escena3.unity
+    guid: 73f08a91455d5764bb7a84ee325b7800
+  - enabled: 1
+    path: Assets/Scenes/Interior bar.unity
+    guid: eeeae790c6e3f1e47b0e884624e6a165
+  - enabled: 1
+    path: Assets/Scenes/Escena4.unity
+    guid: 3cf48fe8ddc6bd04b842ca8abd41d77e
+  - enabled: 1
+    path: Assets/Scenes/Bosque.unity
+    guid: 66a649363cfd48343aa58940d9cd51fb
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
