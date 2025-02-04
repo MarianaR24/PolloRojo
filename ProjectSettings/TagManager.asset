@@ -16,6 +16,7 @@ TagManager:
   - Salida
   - Bar
   - Pablin
+  - Guardable
   layers:
   - Default
   - TransparentFX

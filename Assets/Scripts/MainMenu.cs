@@ -21,6 +21,11 @@ public class MainMenu : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("Boton");
     }
+    public void SonidoBotonDos()
+    {
+        FindObjectOfType<AudioManager>().Play("Boton2");
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene("Warning");
