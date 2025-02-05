@@ -3653,13 +3653,13 @@ MonoBehaviour:
   - name: Boton
     audioFile: {fileID: 8300000, guid: 6c581acb69825e440bc8ce464f96c096, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 2
     loop: 0
     source: {fileID: 0}
   - name: Boton2
     audioFile: {fileID: 8300000, guid: 0ec89d36064b706408335bbda30a303c, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 2
     loop: 0
     source: {fileID: 0}
 --- !u!114 &519420036
